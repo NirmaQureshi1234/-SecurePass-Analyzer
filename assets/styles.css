@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: blanchedalmond; /* Pure black */
+    color: #E0E0E0; /* Light text */
+}
+
+/* Main header with animation */
+.main-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00FFBB; /* Neon green */
+    text-shadow: 0 0 10px #00FFBB;
+    margin-bottom: 10px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00FFBB;
+    }
+    100% {
+        text-shadow: 0 0 20px #00FFBB, 0 0 30px #00FFBB;
+    }
+}
+
+/* Sub-header */
+.sub-header {
+    font-size: 1.2rem;
+    color: #B0B0B0; /* Light gray */
+    margin-bottom: 20px;
+}
+
+/* Input field */
+.stTextInput input {
+    background-color: #565252; /* Dark gray */
+    color: #E0E0E0; /* Light text */
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.stTextInput input:focus {
+    border-color: #00FFBB; /* Neon green */
+    box-shadow: 0 0 10px #00FFBB;
+}
+
+/* Result sections */
+.result-section {
+    background-color: #565252; /* Dark gray */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #333;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.strength-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FFBB; /* Neon green */
+    margin-bottom: 10px;
+}
+
+.strength-result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.strength-result.strong {
+    background-color: #00FFBB; /* Neon green */
+    color: #121212; /* Dark text */
+}
+
+.strength-result.moderate {
+    background-color: #FFA500; /* Orange */
+    color: #121212; /* Dark text */
+}
+
+.strength-result.weak {
+    background-color: #FF4B4B; /* Red */
+    color: #121212; /* Dark text */
+}
+
+/* Tips */
+.tip-item {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: #E0E0E0;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Progress bar */
+.stProgress > div > div {
+    background-color: #00FFBB; /* Neon green */
+    animation: progressBar 1s ease;
+}
+
+@keyframes progressBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Celebration animation */
+.celebration {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FFBB;
+    text-align: center;
+    animation: celebrate 1s infinite alternate;
+}
+
+@keyframes celebrate {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #B0B0B0; /* Light gray */
+}
